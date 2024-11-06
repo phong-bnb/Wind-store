@@ -58,7 +58,7 @@ const navigate = useNavigate();
           className="bg-[#f8f7f7] p-6 rounded-lg w-[50%] "
         >
           <h1 className="text-black text-center pb-10 font-bold text-2xl">
-            Login
+            {!isSignUp ? <p>Sign In</p> : <p>Sign Up</p>}
           </h1>
 
           <Form.Item<FieldType>
@@ -77,7 +77,7 @@ const navigate = useNavigate();
             <Input.Password onChange={(e) => setValuePass(e.target.value)} />
           </Form.Item>
 
-          {isSignUp ? (
+          {!isSignUp ? (
             <Form.Item<FieldType> name="remember" valuePropName="checked">
               <Checkbox>Remember me</Checkbox>
             </Form.Item>
@@ -112,13 +112,13 @@ const navigate = useNavigate();
             <Button
               type="primary"
               htmlType="submit"
-                          className="w-full p-6 font-semibold text-lg mb-2"
-                          onClick={handleSubmit}
+              className="w-full p-6 font-semibold text-lg mb-2"
+              onClick={handleSubmit}
             >
-              Submit
+              {!isSignUp ? <p>Sign In</p> : <p>Sign Up</p>}
             </Button>
             <div className="flex gap-1">
-              {isSignUp ? (
+              {!isSignUp ? (
                 <p>Already have an account?</p>
               ) : (
                 <p>Don't have an account?</p>
@@ -127,7 +127,7 @@ const navigate = useNavigate();
                 onClick={handleSignUp}
                 className="text-blue-400 hover:text-blue-700"
               >
-                {isSignUp ? <p>Sign Up</p> : <p>Sign In</p>}
+                {!isSignUp ? <p>Sign Up</p> : <p>Sign In</p>}
               </button>
             </div>
           </Form.Item>

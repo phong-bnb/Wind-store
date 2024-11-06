@@ -1,24 +1,13 @@
 import React from "react";
 import { Layout } from "antd";
+import HeaderApp from "../header";
 
 const { Header, Content, Footer } = Layout;
 const HomeScreen = () => {
   return (
     <div>
       <Layout>
-        <Header style={{ backgroundColor: "#4d5053", padding: "0 20px" }}>
-          <div
-            style={{ color: "#fff", fontWeight: "bold", fontSize: "18px" }}
-            className="flex justify-between"
-          >
-            MyApp
-                      <div>
-                          <button>
-                              
-                          </button>
-           </div>
-          </div>
-        </Header>
+        <HeaderApp/>
 
         <Content style={{ padding: "20px", minHeight: "80vh" }}>
           <h1>Main Content</h1>
