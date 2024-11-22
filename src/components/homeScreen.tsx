@@ -1,8 +1,9 @@
-import React from "react";
 import { Layout } from "antd";
 import HeaderApp from "../header";
+import HomePage from "./homes/dealngonmoingay/HomePage";
+import HomePageNew from "./homes/news/HomePage";
 
-const { Header, Content, Footer } = Layout;
+const { Content, Footer } = Layout;
 const HomeScreen = () => {
   return (
     <div>
@@ -10,11 +11,14 @@ const HomeScreen = () => {
         <HeaderApp/>
 
         <Content style={{ padding: "20px", minHeight: "80vh" }}>
-          <h1>Main Content</h1>
+          <HomePage/>
+          <HomePageNew/>
         </Content>
 
         <Footer style={{ textAlign: "center" }}>
-          ©2024 Created by MyApp Team
+          ©2024 Created by WIND DEV 
+          <hr />
+          CALL or ZALO:0383.299.526
         </Footer>
       </Layout>
     </div>
@@ -22,3 +26,4 @@ const HomeScreen = () => {
 };
 
 export default HomeScreen;
+

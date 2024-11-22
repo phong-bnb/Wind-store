@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Input, Button, Checkbox } from "antd";
 import type { FormProps } from "antd";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 type FieldType = {
   username?: string;
   password?: string;

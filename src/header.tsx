@@ -1,4 +1,3 @@
-import { Header } from "antd/es/layout/layout";
 import { Input } from "antd";
 import { PiMapPinLineBold } from "react-icons/pi";
 import { FaCartPlus, FaUserAlt } from "react-icons/fa";
@@ -13,7 +12,7 @@ const HeaderApp = () => {
     console.log(info?.source, value);
 
   return (
-    <div className="flex items-start justify-center bg-[#000000] w-full">
+    <div className="flex items-start justify-center bg-[#0cbee2] w-full">
       <div
         style={{ color: "#fff", fontWeight: "bold", fontSize: "18px" }}
         className="flex flex-row items-center gap-20 justify-center w-full"
@@ -23,10 +22,10 @@ const HeaderApp = () => {
           placeholder="input search text"
           onSearch={onSearch}
           enterButton
-          className="items-center justify-center w-[40%] flex search-input"
+          className="items-center justify-center w-[40%] flex "
         />
-        <div className="flex flex-row">
-          <button className="flex flex-row gap-3 items-center p-6">
+        <div className="flex flex-row gap-10 ml-10">
+          <button className="flex flex-row gap-3 items-center p-6 pl-0">
             <PiMapPinLineBold className="w-5 h-5" />
             <p className="font-mono text-sm">
               Hệ thống <br /> cửa hàng

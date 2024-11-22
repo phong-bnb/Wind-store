@@ -18,3 +18,11 @@ code {
 .search-input .ant-input {
   padding: 16px 16px;
 }
+.carousel-horizontal .slick-slide > div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.carousel-horizontal .slick-slide {
+  display: flex;
+}
