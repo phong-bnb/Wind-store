@@ -2,6 +2,7 @@ import { Layout } from "antd";
 import HeaderApp from "../header";
 import HomePage from "./homes/dealngonmoingay/HomePage";
 import HomePageNew from "./homes/news/HomePage";
+import HomePageClassify from "./homes/classify/HomePage";
 
 const { Content, Footer } = Layout;
 const HomeScreen = () => {
@@ -13,6 +14,7 @@ const HomeScreen = () => {
         <Content style={{ padding: "20px", minHeight: "80vh" }}>
           <HomePage/>
           <HomePageNew/>
+          <HomePageClassify/>
         </Content>
 
         <Footer style={{ textAlign: "center" }}>
