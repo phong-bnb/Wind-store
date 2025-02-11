@@ -1,5 +1,5 @@
 import { Layout } from "antd";
-import HeaderApp from "../header";
+import HeaderApp from "./headers/header";
 import HomePage from "./homes/dealngonmoingay/HomePage";
 import HomePageNew from "./homes/news/HomePage";
 import HomePageClassify from "./homes/classify/HomePage";
@@ -10,11 +10,14 @@ const HomeScreen = () => {
     <div>
       <Layout>
         <HeaderApp/>
-
-        <Content style={{ padding: "20px", minHeight: "80vh" }}>
+           
+        <Content style={{  minHeight: "80vh" }}>
+          <img src="/biastore.png" alt="bia beo store" />
+          <div className="m-4">
           <HomePage/>
           <HomePageNew/>
           <HomePageClassify/>
+          </div>
         </Content>
 
         <Footer style={{ textAlign: "center" }}>
